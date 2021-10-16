@@ -1,0 +1,35 @@
+@import '../colors';
+
+.container{
+  width: 100%;
+  background-color: $red600;
+  color: white;
+}
+
+.navbar{
+  max-width: 85rem;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  width: 12rem;
+}
+
+.navMenu{
+  display: flex;
+  align-items: center;
+
+  & div{
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.377);
+    }
+  }
+}
