@@ -3,7 +3,7 @@ import styles from '../styles/components/Navbar.module.scss'
 
 export default function Navbar() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.containerNav}>
 			<nav className={styles.navbar}>
 				<div className={styles.logo}>
 					<Link to='/'>
