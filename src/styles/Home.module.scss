@@ -6,9 +6,42 @@
   margin: auto;
 }
 
+.bestSellerSection{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.bestSellerHead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & span{
+    width: 30%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
+  & div{
+    height: 0.75rem;
+    background-color: $red500;
+    border-radius: 10px;
+  }
+
+  & img{
+    width: 15%;
+    margin: 0 5%;
+  }
+}
+
 .bestSeller{
   display: flex;
   align-items: center;
+  margin-top: 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 
   .bestSellerImage{
     width: 50%;
@@ -21,7 +54,7 @@
 
     .bestSellerIcon{
       position: absolute;
-      top: 0;
+      top: 10%;
       right: 20%;
       width: 15%;
       animation: bounce 3s infinite ease-out;
@@ -46,7 +79,7 @@
       background-color: $red600;
       outline: none;
       border: none;
-      padding: 0.75rem 1rem;
+      padding: 1rem 1.25rem;
       border-radius: 10px;
       font-weight: bold;
       color: white;
@@ -60,13 +93,57 @@
 }
 
 @keyframes bounce {
-  0%{
-    top: 5%;
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
-  50%{
-    top: 15%;
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
-  100%{
-    top: 5%;
+}
+
+@media screen and (max-width: 420px) {
+  .bestSellerSection{
+    margin-top: 2rem;
   }
+
+  .bestSellerHead{
+    & span{
+      font-size: 2.25rem;
+      font-weight: 800;
+    }
+  
+    & div{
+      height: 0.5rem;
+    }
+  }
+
+  .bestSeller{
+    margin-top: 1rem;
+    justify-content: center;
+    flex-direction: column;
+  
+    .bestSellerImage{
+      width: 100%;
+  
+      .bestSellerIcon{
+        top: 10%;
+      }
+    }
+  
+    .bestSellerDesc{
+      text-align: center;
+      width: 80%;
+      margin: auto;
+  
+      & h1{
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
 }

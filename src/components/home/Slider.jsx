@@ -37,24 +37,28 @@ export default function Slider() {
 			next.on('click', function () {
 				if (!sliding) {
 					if (curr < promoImageList.length) curr++
-					listSlide.animate({ 'margin-left': '-=' + width }, 500)
-					if (curr >= promoImageList.length) {
-						curr = 1
-						listSlide.css('margin-left', 0)
-					}
+					listSlide.animate({ 'margin-left': '-=' + width }, 500, function () {
+						if (curr >= promoImageList.length) {
+							curr = 1
+							listSlide.css('margin-left', 0)
+						}
+					})
 				}
 			})
 
 			prev.on('click', function () {
 				if (!sliding) {
 					if (curr > 0) curr--
-					listSlide.css('margin-left', '+=' + width)
-					if (curr === 1) {
-						curr = promoImageList.length
-						listSlide.css('margin-left', '-400%')
-					} else if (curr < 1) {
+					if (curr < 1) {
 						curr = promoImageList.length - 1
 						listSlide.css('margin-left', '-300%')
+					}else{
+						listSlide.animate({ 'margin-left': '+=' + width }, 500, function () {
+							if (curr === 1) {
+								curr = promoImageList.length
+								listSlide.css('margin-left', '-400%')
+							}
+						})
 					}
 				}
 			})
