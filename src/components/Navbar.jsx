@@ -8,21 +8,25 @@ export default function Navbar() {
 				<div className={styles.logo}>
 					<Link to='/'>
 						<img src='/logo-land.png' alt='BurgeL King' />
+						<img src='/logo-square.png' alt='BurgeL King' />
 					</Link>
 				</div>
-				<div className={styles.navMenu}>
-					<Link to='/'>
-						<div>Menu</div>
-					</Link>
-					<Link to='/'>
-						<div>Order</div>
-					</Link>
-					<Link to='/'>
-						<div>Coming Soon</div>
-					</Link>
-					<Link to='/'>
-						<div>About us</div>
-					</Link>
+				<div className={styles.moreMenu}>
+					<span className={styles.navMenu}>More</span>
+					<div className={styles.navMenus}>
+						<Link to='/'>
+							<div className={styles.navMenu}>Menu</div>
+						</Link>
+						<Link to='/'>
+							<div className={styles.navMenu}>Order</div>
+						</Link>
+						<Link to='/'>
+							<div className={styles.navMenu}>Coming Soon</div>
+						</Link>
+						<Link to='/about'>
+							<div className={styles.navMenu}>About us</div>
+						</Link>
+					</div>
 				</div>
 			</nav>
 		</div>

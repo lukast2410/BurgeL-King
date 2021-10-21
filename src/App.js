@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import { useEffect } from 'react'
+import About from './pages/About'
 
 function App() {
 	useEffect(() => {
@@ -19,7 +20,9 @@ function App() {
 					<Route exact path='/'>
 						<Home />
 					</Route>
-					<Route path='/about'></Route>
+					<Route path='/about'>
+						<About/>
+					</Route>
 					<Route path='/users'></Route>
 				</Switch>
 				<Footer />

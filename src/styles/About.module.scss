@@ -1,0 +1,105 @@
+@import 'colors.scss';
+
+.aboutUs {
+  min-height: calc(100vh - 10rem);
+}
+
+.container {
+  width: 90%;
+  max-width: 768px;
+  margin: auto;
+  text-align: left;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+
+  & h1 {
+    width: fit-content;
+    padding: 1rem 3rem;
+    font-size: 4.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: $red600 0.5rem dashed;
+  }
+}
+
+.story {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.vision {
+  font-weight: 500;
+  padding: 1rem 0;
+
+  & h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  & div {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  & div img {
+    width: 40%;
+    margin-right: 2rem;
+  }
+
+  & div p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+.contactUs {
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  & h1 {
+    font-size: 1.75rem;
+  }
+
+  & h2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  & p {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title h1 {
+    margin: 0 2rem 1rem 2rem;
+    padding: 1rem 3rem;
+    font-size: 3rem;
+  }
+
+
+  .vision {
+    & h1 {
+      text-align: left;
+    }
+
+    & div {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    & div img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
