@@ -20,7 +20,7 @@ export default function Navbar() {
 						<Link to='/'>
 							<div className={styles.navMenu}>Order</div>
 						</Link>
-						<Link to='/'>
+						<Link to='/coming-soon'>
 							<div className={styles.navMenu}>Coming Soon</div>
 						</Link>
 						<Link to='/about'>
