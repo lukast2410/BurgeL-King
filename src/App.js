@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import { useEffect } from 'react'
 import About from './pages/About'
 import ComingSoon from './pages/ComingSoon'
+import Order from './pages/Order'
 
 function App() {
 	useEffect(() => {
@@ -26,6 +27,9 @@ function App() {
 					</Route>
 					<Route path='/coming-soon'>
 						<ComingSoon/>
+					</Route>
+					<Route path='/order'>
+						<Order/>
 					</Route>
 				</Switch>
 				<Footer />

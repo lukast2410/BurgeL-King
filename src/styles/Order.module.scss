@@ -1,0 +1,160 @@
+@import 'colors.scss';
+
+.order {
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 650px;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+
+  & h1 {
+    width: fit-content;
+    padding: 1rem 3rem;
+    font-size: 4.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: $red600 0.5rem dashed;
+  }
+}
+
+.form span {
+  width: 100%;
+  color: $red600;
+  text-align: right;
+  font-weight: 500;
+}
+
+.formComponent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+
+  & label {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 0.25rem;
+  }
+
+  & input,
+  select,
+  textarea, option {
+    width: 100%;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+
+    &:focus {
+      border: solid 2px black;
+      box-shadow: 0px 0px 7px gray;
+    }
+  }
+}
+
+.agreement {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 1rem;
+
+  & div {
+    display: flex;
+    align-items: center;
+  }
+
+  & input {
+    width: 20px;
+    height: 20px;
+  }
+
+  & label {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+}
+
+.submit {
+  width: 100%;
+  margin-bottom: 4rem;
+
+  & button {
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    border: none;
+    border-radius: 10px;
+    background-color: $red600;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red700;
+    }
+  }
+}
+
+.modalOverlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(80, 80, 80, 0.308);
+  overflow: hidden;
+
+  .modal{
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+
+    & h1{
+      font-size: 2.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    & button{
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      background-color: $red600;
+      color: white;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 1em;
+      margin-top: 1rem;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $red700;
+      }
+    }
+  }
+}

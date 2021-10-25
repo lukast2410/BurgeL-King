@@ -30,7 +30,9 @@ export default function Home() {
 					<div className={styles.bestSellerDesc}>
 						<h1>Super Hot Beast Burger</h1>
 						<p>with mayo, shredded lettuce, pickles, and BurgeL King secret recipes.</p>
-						<button>Order now</button>
+						<Link to='/order'>
+							<button>Order now</button>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -68,11 +70,11 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-					<div className={styles.viewAllBottomContainer}>
-						<Link to='/' className={styles.viewAllBottom}>
-							<ArrowRightIcon className={`${styles.btnViewAllBottom}`} />
-						</Link>
-					</div>
+				<div className={styles.viewAllBottomContainer}>
+					<Link to='/' className={styles.viewAllBottom}>
+						<ArrowRightIcon className={`${styles.btnViewAllBottom}`} />
+					</Link>
+				</div>
 			</section>
 		</div>
 	)

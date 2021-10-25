@@ -14,10 +14,10 @@ export default function Navbar() {
 				<div className={styles.moreMenu}>
 					<span className={styles.navMenu}>More</span>
 					<div className={styles.navMenus}>
-						<Link to='/'>
+						<Link to='/menu'>
 							<div className={styles.navMenu}>Menu</div>
 						</Link>
-						<Link to='/'>
+						<Link to='/order'>
 							<div className={styles.navMenu}>Order</div>
 						</Link>
 						<Link to='/coming-soon'>
