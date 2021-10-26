@@ -44,30 +44,38 @@ export default function Home() {
 				</div>
 				<div className={styles.featuredRight}>
 					<div className={styles.menuLeft}>
-						<div className={styles.menu}>
-							<img src='/assets/beef-burger.png' alt='' />
-							<p>Beef Burgers</p>
-						</div>
-						<div className={styles.menu}>
-							<img src='/assets/fries.png' alt='' />
-							<p>Sidedish</p>
-						</div>
+						<Link to='/menu'>
+							<div className={styles.menu}>
+								<img src='/assets/beef-burger.png' alt='' />
+								<p>Beef Burgers</p>
+							</div>
+						</Link>
+						<Link to='/menu'>
+							<div className={styles.menu}>
+								<img src='/assets/fries.png' alt='' />
+								<p>Sidedish</p>
+							</div>
+						</Link>
 						<div className={styles.viewAllContainer}>
-							<Link to='/' className={styles.viewAll}>
+							<Link to='/menu' className={styles.viewAll}>
 								<ArrowRightIcon className={`${styles.btnViewAll}`} />
 							</Link>
 						</div>
 					</div>
 					<div className={styles.menuRight}>
 						<img src='/assets/featured.png' alt='' className={styles.featuredIcon} />
-						<div className={styles.menu}>
-							<img src='/assets/chicken-burger.png' alt='' />
-							<p>Chicken Burgers</p>
-						</div>
-						<div className={styles.menu}>
-							<img src='/assets/beverages.png' alt='' />
-							<p>Beverages</p>
-						</div>
+						<Link to='/menu'>
+							<div className={styles.menu}>
+								<img src='/assets/chicken-burger.png' alt='' />
+								<p>Chicken Burgers</p>
+							</div>
+						</Link>
+						<Link to='/menu'>
+							<div className={styles.menu}>
+								<img src='/assets/beverages.png' alt='' />
+								<p>Beverages</p>
+							</div>
+						</Link>
 					</div>
 				</div>
 				<div className={styles.viewAllBottomContainer}>

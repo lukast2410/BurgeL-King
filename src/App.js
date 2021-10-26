@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import About from './pages/About'
 import ComingSoon from './pages/ComingSoon'
 import Order from './pages/Order'
+import Menu from './pages/Menu'
 
 function App() {
 	useEffect(() => {
@@ -30,6 +31,9 @@ function App() {
 					</Route>
 					<Route path='/order'>
 						<Order/>
+					</Route>
+					<Route path='/menu'>
+						<Menu/>
 					</Route>
 				</Switch>
 				<Footer />
