@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from '../styles/Menu.module.scss'
 
-const listFood = [
+export const listFood = [
 	{
 		image: '/assets/beef-burger.png',
 		alt: 'Beef Burger',
@@ -135,7 +135,7 @@ export default function Menu() {
 				</div>
 				<div className={styles.listFood}>
 					{listFood.map((x) => (
-						<div className={styles.food}>
+						<div key={x.name} className={styles.food}>
 							<div className={`${x.alt === 'Beverages' ? styles.beveragesImage : styles.foodImage}`}>
 								<img src={x.image} alt={x.alt} />
 							</div>

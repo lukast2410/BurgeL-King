@@ -8,27 +8,27 @@ export default function Footer() {
 					<h1>Burgel king</h1>
 					<div className={styles.footerLink}>
 						<div>
-							<a href='https://www.bk.com/corp-respon'>Policies</a>
+							<a href='https://www.bk.com/corp-respon' target="#">Policies</a>
 						</div>
 						|
 						<div>
-							<a href='https://www.bk.com/terms-of-service'>Terms of Service</a>
+							<a href='https://www.bk.com/terms-of-service' target="#">Terms of Service</a>
 						</div>
 						|
 						<div>
-							<a href='https://www.bk.com/contact-us'>Contact Us</a>
+							<a href='https://www.bk.com/contact-us' target="#">Contact Us</a>
 						</div>
 					</div>
 					<div className={styles.copyright}>© Copyright 2021 BurgeL King Corporation</div>
 				</div>
 				<div className={styles.footerRight}>
-					<a href='https://www.instagram.com/lukast2410/'>
+					<a href='https://www.instagram.com/lukast2410/' target="#">
 						<img src="/assets/instagram.png" alt="" />
 					</a>
-					<a href='https://www.linkedin.com/in/lukas-t-b38884137/'>
+					<a href='https://www.linkedin.com/in/lukas-t-b38884137/' target="#">
 						<img src="/assets/linkedin.png" alt="" />
 					</a>
-					<a href='https://github.com/lukast2410'>
+					<a href='https://github.com/lukast2410' target="#">
 						<img src="/assets/github.jpg" alt="" />
 					</a>
 				</div>

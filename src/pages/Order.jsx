@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from '../styles/Order.module.scss'
+import { listFood } from './Menu'
 
 export default function Order() {
 	function validateForm(e) {
@@ -100,9 +101,10 @@ export default function Order() {
 						<div className={styles.formComponent}>
 							<label htmlFor='food'>Food</label>
 							<select name='food' id='food'>
-								<option value=''>Select a food</option>
-								<option value=''>Burger 1</option>
-								<option value=''>Burger 2</option>
+								<option value='Select'>Select a food</option>
+								{listFood.map(x => (
+									<option key={x.name} value={x.name}>{x.name}</option>
+								))}
 							</select>
 							<span id='errorFood'></span>
 						</div>
