@@ -79,7 +79,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.viewAllBottomContainer}>
-					<Link to='/' className={styles.viewAllBottom}>
+					<Link to='/menu' className={styles.viewAllBottom}>
 						<ArrowRightIcon className={`${styles.btnViewAllBottom}`} />
 					</Link>
 				</div>

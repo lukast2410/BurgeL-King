@@ -78,12 +78,15 @@
 }
 
 @media screen and (max-width: 420px) {
-  .title h1 {
-    margin: 0 2rem 1rem 2rem;
-    padding: 1rem 3rem;
-    font-size: 3rem;
-  }
+  .title {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
 
+    & h1 {
+      padding: 1rem 2rem;
+      font-size: 3rem;
+    }
+  }
 
   .vision {
     & h1 {

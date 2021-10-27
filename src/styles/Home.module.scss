@@ -318,6 +318,11 @@
       flex: 1;
       display: flex;
 
+      & a {
+        height: 100%;
+        margin-bottom: 1.5rem;
+      }
+
       .menu {
         flex: 1;
         margin: 0 0.75rem 1.5rem 0.75rem;
@@ -326,6 +331,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
       }
 
       .menuLeft {
@@ -350,7 +356,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 10%;
+      margin-top: 2rem;
   
       .viewAllBottom {
         width: fit-content;
@@ -448,21 +454,13 @@
 
     .menuLeft {
       .menu {
-        margin: 0 0.75rem 0 0;
-      }
-
-      .menu:nth-child(2){
-        margin-top: 1rem;
+        margin: 0 0.5rem 0 0;
       }
     }
 
     .menuRight {
       .menu {
-        margin: 0 0 0 0.75rem;
-      }
-
-      .menu:last-child{
-        margin-top: 1rem;
+        margin: 0 0 0 0.5rem;
       }
     }
   }

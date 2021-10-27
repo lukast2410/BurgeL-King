@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from '../styles/components/Footer.module.scss'
 
 export default function Footer() {
@@ -9,15 +8,15 @@ export default function Footer() {
 					<h1>Burgel king</h1>
 					<div className={styles.footerLink}>
 						<div>
-							<Link to='/'>Policies</Link>
+							<a href='https://www.bk.com/corp-respon'>Policies</a>
 						</div>
 						|
 						<div>
-							<Link to='/'>Terms of Service</Link>
+							<a href='https://www.bk.com/terms-of-service'>Terms of Service</a>
 						</div>
 						|
 						<div>
-							<Link to='/'>Contact Us</Link>
+							<a href='https://www.bk.com/contact-us'>Contact Us</a>
 						</div>
 					</div>
 					<div className={styles.copyright}>© Copyright 2021 BurgeL King Corporation</div>
